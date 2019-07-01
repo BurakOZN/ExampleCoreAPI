@@ -1,6 +1,8 @@
 ﻿using BLL;
 using Entity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +11,7 @@ using System.Threading.Tasks;
 namespace API.Controllers
 {
     [ApiController]
+    [Authorize]
     public class BaseAPI<T> : ControllerBase where T : BaseEntity
     {
         private IRepository<T> _repository;
@@ -27,8 +30,8 @@ namespace API.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            List<T> subWork = _repository.Get();
-            return Ok(subWork);
+            List<T> entities = _repository.Get();
+            return Ok(entities);
         }
 
         [HttpPost]
@@ -36,9 +39,9 @@ namespace API.Controllers
         {
             CrudState state = _repository.Add(entity);
             if (state == CrudState.Success)
-                return Ok(entity);
+                return Created("/" + typeof(T).Name + "/" + entity.Id, entity);
             else
-                return Ok(null);//hata durumu dönebiliriz düşünelim
+                return Conflict();
         }
 
         [HttpPost]
@@ -46,9 +49,9 @@ namespace API.Controllers
         {
             CrudState state = _repository.Add(entity);
             if (state == CrudState.Success)
-                return Ok(entity);
+                return Created("/" + typeof(T).Name,entity);
             else
-                return Ok(null);//hata durumu dönebiliriz düşünelim
+                return Conflict();//hata durumu dönebiliriz
         }
 
 
@@ -59,7 +62,7 @@ namespace API.Controllers
             if (state == CrudState.Success)
                 return Ok(entity);
             else
-                return Ok(null);
+                return NotFound();
         }
 
         [HttpDelete]
@@ -69,7 +72,7 @@ namespace API.Controllers
             if (state == CrudState.Success)
                 return Ok(true);
             else
-                return Ok(false);
+                return NotFound(false);
         }
 
     }
