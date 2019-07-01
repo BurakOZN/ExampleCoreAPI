@@ -15,9 +15,9 @@ namespace Entity
         [DataMember]
         public string Id { get; set; }
         [DataMember]
-        public DateTime CreatAt { get; set; }
+        public DateTime CreateAt { get; set; }
         [DataMember]
-        public string CreatBy { get; set; }
+        public string CreateBy { get; set; }
         [DataMember]
         public DateTime UpdateAt { get; set; }
         [DataMember]

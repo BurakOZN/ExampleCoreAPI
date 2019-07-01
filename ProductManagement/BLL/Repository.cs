@@ -23,7 +23,7 @@ namespace BLL
             try
             {
                 entity.Id = Guid.NewGuid().ToString();
-                entity.CreatAt = DateTime.Now;
+                entity.CreateAt = DateTime.Now;
                 entity.UpdateAt = DateTime.Now;
                 entitySet.Add(entity);
                 return Save() == ConnectionState.Success ? CrudState.Success : CrudState.ConnectionError;

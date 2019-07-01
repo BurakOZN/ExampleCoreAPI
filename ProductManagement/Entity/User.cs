@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 namespace Entity
 {
     [DataContract]
-    public class User
+    public class User : BaseEntity
     {
         [DataMember]
         public string FirstName { get; set; }
