@@ -35,7 +35,7 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(T entity)
+        public virtual IActionResult Add(T entity)
         {
             CrudState state = _repository.Add(entity);
             if (state == CrudState.Success)

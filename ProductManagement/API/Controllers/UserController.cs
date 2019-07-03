@@ -22,5 +22,10 @@ namespace API.Controllers
             _repository = repository;
             _logger = logger;
         }
+        [AllowAnonymous]
+        public override IActionResult Add(User entity)
+        {
+            return base.Add(entity);
+        }
     }
 }

@@ -22,6 +22,7 @@ namespace API.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
         public IActionResult UserProducts(string userid)
         {
             var products = _repository.Get(x => x.UserId == userid);
