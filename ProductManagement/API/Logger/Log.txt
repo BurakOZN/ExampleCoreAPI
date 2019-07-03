@@ -1,0 +1,788 @@
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Information: 1 - Request starting HTTP/1.1 DEBUG http://localhost:51920/  0
+Information: 2 - Request finished in 15462.5268ms 200 
+Warning: 0 - Connection processing ended abnormally.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/user/getx/sdadasda  
+Information: 2 - Request finished in 173.743ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/user/getx/sdadasda  
+Information: 2 - Request finished in 3.1859ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/user/getx/sdadasda  
+Information: 2 - Request finished in 5.9298ms 404 
+Information: 1 - Request starting HTTP/1.1 DEBUG http://localhost:51920/  0
+Information: 2 - Request finished in 12152.6096ms 200 
+Warning: 0 - Connection processing ended abnormally.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Information: 2 - Request finished in 219.8184ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/user/getx/sdadasda  
+Information: 2 - Request finished in 3.5338ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/user/getx/sdadasda  
+Information: 2 - Request finished in 3.4397ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/user/getall  
+Information: 3 - Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller API.Controllers.UserController (API).
+Warning: 30000 - No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+Information: 10403 - Entity Framework Core 2.1.11-servicing-32099 initialized 'ManContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+Information: 1 - Executing action method API.Controllers.UserController.GetAll (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreateAt], [u].[CreateBy], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[Password], [u].[UpdateAt], [u].[UpdateBy]
+FROM [Users] AS [u]
+Information: 2 - Executed action method API.Controllers.UserController.GetAll (API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 198.4754ms.
+Information: 1 - Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entity.User, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Information: 2 - Executed action API.Controllers.UserController.GetAll (API) in 636.2555ms
+Information: 2 - Request finished in 699.5254ms 200 application/json; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/user/getx/sdadasda  
+Information: 2 - Request finished in 12.8562ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/user/getx/sdadasda  
+Information: 2 - Request finished in 4.402ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/user/getx/sdadasda  
+Information: 2 - Request finished in 3.36ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/user/getx?id=sdadasda  
+Information: 3 - Route matched with {action = "Getx", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Getx(System.String) on controller API.Controllers.UserController (API).
+Information: 1 - Executing action method API.Controllers.UserController.Getx (API) - Validation state: Valid
+Information: 0 - Hi from logger !
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[CreateAt], [x].[CreateBy], [x].[Email], [x].[FirstName], [x].[IsActive], [x].[LastName], [x].[Password], [x].[UpdateAt], [x].[UpdateBy]
+FROM [Users] AS [x]
+WHERE [x].[Id] = @__id_0
+Information: 2 - Executed action method API.Controllers.UserController.Getx (API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10610.7296ms.
+Information: 1 - Executing ObjectResult, writing value of type 'null'.
+Information: 2 - Executed action API.Controllers.UserController.Getx (API) in 14013.5266ms
+Information: 2 - Request finished in 14036.9165ms 204 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Warning: 0 - Connection processing ended abnormally.
+Information: 1 - Request starting HTTP/1.1 DEBUG http://localhost:51920/  0
+Information: 2 - Request finished in 1000.0146ms 200 
+Warning: 0 - Connection processing ended abnormally.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Information: 2 - Request finished in 275.4692ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/token  
+Information: 2 - Request finished in 9.5859ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/token  
+Information: 2 - Request finished in 15.7564ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/post  
+Information: 2 - Request finished in 3.5916ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/Token  
+Information: 2 - Request finished in 3.7528ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/Token/post  
+Information: 2 - Request finished in 4.2845ms 404 
+Information: 1 - Request starting HTTP/1.1 DEBUG http://localhost:51920/  0
+Information: 2 - Request finished in 2843.4478ms 200 
+Warning: 0 - Connection processing ended abnormally.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Information: 2 - Request finished in 403.8929ms 404 
+Information: 1 - Request starting HTTP/1.1 DEBUG http://localhost:51920/  0
+Information: 2 - Request finished in 1197.0479ms 200 
+Warning: 0 - Connection processing ended abnormally.
+Information: 1 - Request starting HTTP/1.1 DEBUG http://localhost:51920/  0
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/token/token  0
+Information: 2 - Request finished in 7378.5722ms 200 
+Warning: 0 - Connection processing ended abnormally.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Information: 2 - Request finished in 67.3996ms 404 
+Information: 3 - Route matched with {action = "Post", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(LoginRequest) on controller API.Controllers.TokenController (API).
+Warning: 30000 - No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+Information: 10403 - Entity Framework Core 2.1.11-servicing-32099 initialized 'ManContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+Information: 1 - Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+Information: 2 - Executed action API.Controllers.TokenController.Post (API) in 781.181ms
+Information: 2 - Request finished in 1459.4596ms 400 application/json; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/token/token  0
+Information: 3 - Route matched with {action = "Post", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(LoginRequest) on controller API.Controllers.TokenController (API).
+Information: 1 - Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+Information: 2 - Executed action API.Controllers.TokenController.Post (API) in 20.5337ms
+Information: 2 - Request finished in 52.9045ms 400 application/json; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/token/token application/json 50
+Information: 3 - Route matched with {action = "Post", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(LoginRequest) on controller API.Controllers.TokenController (API).
+Information: 1 - Executing action method API.Controllers.TokenController.Post (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (31ms) [Parameters=[@__request_UserName_0='?' (Size = 450), @__request_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[CreateAt], [x].[CreateBy], [x].[Email], [x].[FirstName], [x].[IsActive], [x].[LastName], [x].[Password], [x].[UpdateAt], [x].[UpdateBy]
+FROM [Users] AS [x]
+WHERE ([x].[Email] = @__request_UserName_0) AND ([x].[Password] = @__request_Password_1)
+Information: 2 - Executed action method API.Controllers.TokenController.Post (API), returned result Microsoft.AspNetCore.Mvc.UnauthorizedResult in 6976.8232ms.
+Information: 1 - Executing HttpStatusCodeResult, setting HTTP status code 401
+Information: 2 - Executed action API.Controllers.TokenController.Post (API) in 7040.3712ms
+Information: 2 - Request finished in 7065.3791ms 401 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/token application/json 50
+Information: 2 - Request finished in 23.1087ms 404 
+Information: 32 - Connection id "0HLNU8QF3LRRR", Request id "0HLNU8QF3LRRR:00000005": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Warning: 0 - Connection processing ended abnormally.
+Information: 2 - Request finished in 1168.0527ms 404 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/token application/json 50
+Information: 2 - Request finished in 8.3319ms 404 
+Information: 32 - Connection id "0HLNU8RM2FL6D", Request id "0HLNU8RM2FL6D:00000002": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/token application/json 50
+Information: 2 - Request finished in 8.5477ms 404 
+Information: 32 - Connection id "0HLNU8RM2FL6D", Request id "0HLNU8RM2FL6D:00000003": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/token/token application/json 50
+Information: 2 - Request finished in 8.3161ms 404 
+Information: 32 - Connection id "0HLNU8RM2FL6D", Request id "0HLNU8RM2FL6D:00000004": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/post application/json 50
+Information: 2 - Request finished in 5.4036ms 404 
+Information: 32 - Connection id "0HLNU8RM2FL6D", Request id "0HLNU8RM2FL6D:00000005": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/post application/json 50
+Information: 2 - Request finished in 21.7923ms 404 
+Information: 32 - Connection id "0HLNU8RM2FL6D", Request id "0HLNU8RM2FL6D:00000006": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/token/token application/json 50
+Information: 2 - Request finished in 54.7488ms 404 
+Information: 32 - Connection id "0HLNU8RM2FL6D", Request id "0HLNU8RM2FL6D:00000007": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Warning: 0 - Connection processing ended abnormally.
+Information: 2 - Request finished in 2836.1418ms 404 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/token application/json 50
+Information: 3 - Route matched with {action = "Post", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(LoginRequest) on controller API.Controllers.TokenController (API).
+Warning: 30000 - No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+Information: 10403 - Entity Framework Core 2.1.11-servicing-32099 initialized 'ManContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+Information: 1 - Executing action method API.Controllers.TokenController.Post (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (6ms) [Parameters=[@__request_UserName_0='?' (Size = 450), @__request_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[CreateAt], [x].[CreateBy], [x].[Email], [x].[FirstName], [x].[IsActive], [x].[LastName], [x].[Password], [x].[UpdateAt], [x].[UpdateBy]
+FROM [Users] AS [x]
+WHERE ([x].[Email] = @__request_UserName_0) AND ([x].[Password] = @__request_Password_1)
+Information: 2 - Executed action method API.Controllers.TokenController.Post (API), returned result Microsoft.AspNetCore.Mvc.UnauthorizedResult in 2565.4413ms.
+Information: 1 - Executing HttpStatusCodeResult, setting HTTP status code 401
+Information: 2 - Executed action API.Controllers.TokenController.Post (API) in 2995.6618ms
+Information: 2 - Request finished in 3053.7413ms 401 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Warning: 0 - Connection processing ended abnormally.
+Information: 2 - Request finished in 50206.7441ms 404 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/user/add application/json 99
+Information: 2 - Request finished in 10.9709ms 404 
+Information: 32 - Connection id "0HLNU9E1KKA1P", Request id "0HLNU9E1KKA1P:00000001": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/user/add application/json 99
+Information: 2 - Request finished in 12.3867ms 404 
+Information: 32 - Connection id "0HLNU9E1KKA1P", Request id "0HLNU9E1KKA1P:00000002": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/user/add application/json 98
+Information: 2 - Request finished in 29.0919ms 404 
+Information: 32 - Connection id "0HLNU9E1KKA1P", Request id "0HLNU9E1KKA1P:00000003": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/user/add application/json 98
+Information: 2 - Request finished in 19.4682ms 404 
+Information: 32 - Connection id "0HLNU9E1KKA1P", Request id "0HLNU9E1KKA1P:00000004": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/token application/json 50
+Information: 3 - Route matched with {action = "Post", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(LoginRequest) on controller API.Controllers.TokenController (API).
+Warning: 30000 - No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+Information: 10403 - Entity Framework Core 2.1.11-servicing-32099 initialized 'ManContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+Information: 1 - Executing action method API.Controllers.TokenController.Post (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (15ms) [Parameters=[@__request_UserName_0='?' (Size = 450), @__request_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[CreateAt], [x].[CreateBy], [x].[Email], [x].[FirstName], [x].[IsActive], [x].[LastName], [x].[Password], [x].[UpdateAt], [x].[UpdateBy]
+FROM [Users] AS [x]
+WHERE ([x].[Email] = @__request_UserName_0) AND ([x].[Password] = @__request_Password_1)
+Information: 2 - Executed action method API.Controllers.TokenController.Post (API), returned result Microsoft.AspNetCore.Mvc.UnauthorizedResult in 304.65ms.
+Information: 1 - Executing HttpStatusCodeResult, setting HTTP status code 401
+Information: 2 - Executed action API.Controllers.TokenController.Post (API) in 1220.4762ms
+Information: 2 - Request finished in 1326.1496ms 401 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/user/getall application/json 98
+Information: 2 - Request finished in 23.3139ms 404 
+Information: 32 - Connection id "0HLNU9E1KKA1P", Request id "0HLNU9E1KKA1P:00000006": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/user/getall application/json 98
+Information: 2 - Request finished in 33.6086ms 404 
+Information: 32 - Connection id "0HLNU9E1KKA1P", Request id "0HLNU9E1KKA1P:00000007": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 DEBUG http://localhost:51920/  0
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Information: 2 - Request finished in 197.9059ms 200 
+Information: 2 - Request finished in 639.5417ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Warning: 0 - Connection processing ended abnormally.
+Information: 2 - Request finished in 2793.1019ms 404 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/token application/json 50
+Information: 3 - Route matched with {action = "Post", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(LoginRequest) on controller API.Controllers.TokenController (API).
+Warning: 30000 - No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+Information: 10403 - Entity Framework Core 2.1.11-servicing-32099 initialized 'ManContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+Information: 1 - Executing action method API.Controllers.TokenController.Post (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (9ms) [Parameters=[@__request_UserName_0='?' (Size = 450), @__request_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[CreateAt], [x].[CreateBy], [x].[Email], [x].[FirstName], [x].[IsActive], [x].[LastName], [x].[Password], [x].[UpdateAt], [x].[UpdateBy]
+FROM [Users] AS [x]
+WHERE ([x].[Email] = @__request_UserName_0) AND ([x].[Password] = @__request_Password_1)
+Information: 2 - Executed action method API.Controllers.TokenController.Post (API), returned result Microsoft.AspNetCore.Mvc.UnauthorizedResult in 193.9136ms.
+Information: 1 - Executing HttpStatusCodeResult, setting HTTP status code 401
+Information: 2 - Executed action API.Controllers.TokenController.Post (API) in 894.2067ms
+Information: 2 - Request finished in 961.339ms 401 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/user/getall application/json 98
+Information: 2 - Request finished in 36.5571ms 404 
+Information: 32 - Connection id "0HLNU9IC5DKON", Request id "0HLNU9IC5DKON:00000003": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/user/add application/json 98
+Information: 2 - Request finished in 7.8978ms 404 
+Information: 32 - Connection id "0HLNU9IC5DKON", Request id "0HLNU9IC5DKON:00000004": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/user/add application/json 98
+Information: 2 - Request finished in 5.9398ms 404 
+Information: 32 - Connection id "0HLNU9IC5DKON", Request id "0HLNU9IC5DKON:00000005": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/user/add application/json 98
+Information: 2 - Request finished in 14.9113ms 404 
+Information: 32 - Connection id "0HLNU9IC5DKON", Request id "0HLNU9IC5DKON:00000006": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/user/add application/json 98
+Information: 3 - Route matched with {action = "Add", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Entity.User) on controller API.Controllers.UserController (API).
+Information: 1 - Executing action method API.Controllers.UserController.Add (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (28ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 450), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [CreateAt], [CreateBy], [Email], [FirstName], [IsActive], [LastName], [Password], [UpdateAt], [UpdateBy])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+Information: 2 - Executed action method API.Controllers.UserController.Add (API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10288.6257ms.
+Information: 1 - Executing ObjectResult, writing value of type 'Entity.User'.
+Information: 2 - Executed action API.Controllers.UserController.Add (API) in 10337.7794ms
+Information: 2 - Request finished in 10373.7287ms 200 application/json; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/token application/json 50
+Information: 3 - Route matched with {action = "Post", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(LoginRequest) on controller API.Controllers.TokenController (API).
+Information: 1 - Executing action method API.Controllers.TokenController.Post (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (361ms) [Parameters=[@__request_UserName_0='?' (Size = 450), @__request_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[CreateAt], [x].[CreateBy], [x].[Email], [x].[FirstName], [x].[IsActive], [x].[LastName], [x].[Password], [x].[UpdateAt], [x].[UpdateBy]
+FROM [Users] AS [x]
+WHERE ([x].[Email] = @__request_UserName_0) AND ([x].[Password] = @__request_Password_1)
+Information: 2 - Executed action method API.Controllers.TokenController.Post (API), returned result Microsoft.AspNetCore.Mvc.UnauthorizedResult in 368.6571ms.
+Information: 1 - Executing HttpStatusCodeResult, setting HTTP status code 401
+Information: 2 - Executed action API.Controllers.TokenController.Post (API) in 408.1484ms
+Information: 2 - Request finished in 435.7569ms 401 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/token application/json 50
+Information: 3 - Route matched with {action = "Post", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(LoginRequest) on controller API.Controllers.TokenController (API).
+Information: 1 - Executing action method API.Controllers.TokenController.Post (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (5ms) [Parameters=[@__request_UserName_0='?' (Size = 450), @__request_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[CreateAt], [x].[CreateBy], [x].[Email], [x].[FirstName], [x].[IsActive], [x].[LastName], [x].[Password], [x].[UpdateAt], [x].[UpdateBy]
+FROM [Users] AS [x]
+WHERE ([x].[Email] = @__request_UserName_0) AND ([x].[Password] = @__request_Password_1)
+Information: 2 - Executed action method API.Controllers.TokenController.Post (API), returned result Microsoft.AspNetCore.Mvc.UnauthorizedResult in 1580.0337ms.
+Information: 1 - Executing HttpStatusCodeResult, setting HTTP status code 401
+Information: 2 - Executed action API.Controllers.TokenController.Post (API) in 1598.3555ms
+Information: 2 - Request finished in 1636.3795ms 401 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/token application/json 52
+Information: 3 - Route matched with {action = "Post", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(LoginRequest) on controller API.Controllers.TokenController (API).
+Information: 1 - Executing action method API.Controllers.TokenController.Post (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (4ms) [Parameters=[@__request_UserName_0='?' (Size = 450), @__request_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[CreateAt], [x].[CreateBy], [x].[Email], [x].[FirstName], [x].[IsActive], [x].[LastName], [x].[Password], [x].[UpdateAt], [x].[UpdateBy]
+FROM [Users] AS [x]
+WHERE ([x].[Email] = @__request_UserName_0) AND ([x].[Password] = @__request_Password_1)
+Information: 2 - Executed action method API.Controllers.TokenController.Post (API), returned result Microsoft.AspNetCore.Mvc.UnauthorizedResult in 13432.9772ms.
+Information: 1 - Executing HttpStatusCodeResult, setting HTTP status code 401
+Information: 2 - Executed action API.Controllers.TokenController.Post (API) in 13452.8122ms
+Information: 2 - Request finished in 13512.9582ms 401 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/token application/json 50
+Information: 3 - Route matched with {action = "Post", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(LoginRequest) on controller API.Controllers.TokenController (API).
+Information: 1 - Executing action method API.Controllers.TokenController.Post (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (5ms) [Parameters=[@__request_UserName_0='?' (Size = 450), @__request_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[CreateAt], [x].[CreateBy], [x].[Email], [x].[FirstName], [x].[IsActive], [x].[LastName], [x].[Password], [x].[UpdateAt], [x].[UpdateBy]
+FROM [Users] AS [x]
+WHERE ([x].[Email] = @__request_UserName_0) AND ([x].[Password] = @__request_Password_1)
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Warning: 0 - Connection processing ended abnormally.
+Information: 2 - Request finished in 1944.5546ms 404 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/token application/json 50
+Information: 3 - Route matched with {action = "Post", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(LoginRequest) on controller API.Controllers.TokenController (API).
+Warning: 30000 - No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+Information: 10403 - Entity Framework Core 2.1.11-servicing-32099 initialized 'ManContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+Information: 1 - Executing action method API.Controllers.TokenController.Post (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (8ms) [Parameters=[@__request_UserName_0='?' (Size = 450), @__request_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[CreateAt], [x].[CreateBy], [x].[Email], [x].[FirstName], [x].[IsActive], [x].[LastName], [x].[Password], [x].[UpdateAt], [x].[UpdateBy]
+FROM [Users] AS [x]
+WHERE ([x].[Email] = @__request_UserName_0) AND ([x].[Password] = @__request_Password_1)
+Information: 2 - Executed action method API.Controllers.TokenController.Post (API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8919.6948ms.
+Information: 1 - Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+Information: 2 - Executed action API.Controllers.TokenController.Post (API) in 12655.0091ms
+Information: 2 - Request finished in 12817.9401ms 200 application/json; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Warning: 0 - Connection processing ended abnormally.
+Information: 2 - Request finished in 2665.8736ms 404 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/user/add application/json 98
+Information: 1 - Failed to validate the token.
+Information: 7 - Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+Information: 3 - Route matched with {action = "Add", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Entity.User) on controller API.Controllers.UserController (API).
+Information: 2 - Authorization failed.
+Information: 3 - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+Information: 1 - Executing ChallengeResult with authentication schemes ().
+Information: 12 - AuthenticationScheme: Bearer was challenged.
+Information: 2 - Executed action API.Controllers.UserController.Add (API) in 65.7658ms
+Information: 2 - Request finished in 354.2807ms 401 
+Information: 32 - Connection id "0HLNU9L88L051", Request id "0HLNU9L88L051:00000001": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Information: 1 - Request starting HTTP/1.1 DEBUG http://localhost:51920/  0
+Information: 2 - Request finished in 146.1832ms 200 
+Information: 2 - Request finished in 551.5643ms 404 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/user/add application/json 98
+Information: 1 - Failed to validate the token.
+Information: 7 - Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+Information: 3 - Route matched with {action = "Add", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Entity.User) on controller API.Controllers.UserController (API).
+Information: 2 - Authorization failed.
+Information: 3 - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+Information: 1 - Executing ChallengeResult with authentication schemes ().
+Information: 12 - AuthenticationScheme: Bearer was challenged.
+Information: 2 - Executed action API.Controllers.UserController.Add (API) in 65.6614ms
+Information: 2 - Request finished in 303.9026ms 401 
+Information: 32 - Connection id "0HLNU9NL22PR9", Request id "0HLNU9NL22PR9:00000002": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/user/add application/json 98
+Information: 1 - Failed to validate the token.
+Information: 7 - Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+Information: 3 - Route matched with {action = "Add", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Entity.User) on controller API.Controllers.UserController (API).
+Information: 2 - Authorization failed.
+Information: 3 - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+Information: 1 - Executing ChallengeResult with authentication schemes ().
+Information: 12 - AuthenticationScheme: Bearer was challenged.
+Information: 2 - Executed action API.Controllers.UserController.Add (API) in 21.7358ms
+Information: 2 - Request finished in 72.2097ms 401 
+Information: 32 - Connection id "0HLNU9NL22PRA", Request id "0HLNU9NL22PRA:00000002": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/token application/json 50
+Information: 3 - Route matched with {action = "Post", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(LoginRequest) on controller API.Controllers.TokenController (API).
+Warning: 30000 - No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+Information: 10403 - Entity Framework Core 2.1.11-servicing-32099 initialized 'ManContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+Information: 1 - Executing action method API.Controllers.TokenController.Post (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (7ms) [Parameters=[@__request_UserName_0='?' (Size = 450), @__request_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[CreateAt], [x].[CreateBy], [x].[Email], [x].[FirstName], [x].[IsActive], [x].[LastName], [x].[Password], [x].[UpdateAt], [x].[UpdateBy]
+FROM [Users] AS [x]
+WHERE ([x].[Email] = @__request_UserName_0) AND ([x].[Password] = @__request_Password_1)
+Information: 2 - Executed action method API.Controllers.TokenController.Post (API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2677.5258ms.
+Information: 1 - Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+Information: 2 - Executed action API.Controllers.TokenController.Post (API) in 3231.8942ms
+Information: 2 - Request finished in 3269.5107ms 200 application/json; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Warning: 0 - Connection processing ended abnormally.
+Information: 2 - Request finished in 2681.0611ms 404 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/token application/json 50
+Information: 3 - Route matched with {action = "Post", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(LoginRequest) on controller API.Controllers.TokenController (API).
+Warning: 30000 - No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+Information: 10403 - Entity Framework Core 2.1.11-servicing-32099 initialized 'ManContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+Information: 1 - Executing action method API.Controllers.TokenController.Post (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (7ms) [Parameters=[@__request_UserName_0='?' (Size = 450), @__request_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[CreateAt], [x].[CreateBy], [x].[Email], [x].[FirstName], [x].[IsActive], [x].[LastName], [x].[Password], [x].[UpdateAt], [x].[UpdateBy]
+FROM [Users] AS [x]
+WHERE ([x].[Email] = @__request_UserName_0) AND ([x].[Password] = @__request_Password_1)
+Information: 2 - Executed action method API.Controllers.TokenController.Post (API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2669.0493ms.
+Information: 1 - Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+Information: 2 - Executed action API.Controllers.TokenController.Post (API) in 3253.1108ms
+Information: 2 - Request finished in 3528.0402ms 200 application/json; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/user/add application/json 98
+Information: 1 - Failed to validate the token.
+Information: 7 - Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+Information: 3 - Route matched with {action = "Add", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Entity.User) on controller API.Controllers.UserController (API).
+Information: 2 - Authorization failed.
+Information: 3 - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+Information: 1 - Executing ChallengeResult with authentication schemes ().
+Information: 12 - AuthenticationScheme: Bearer was challenged.
+Information: 2 - Executed action API.Controllers.UserController.Add (API) in 85.6423ms
+Information: 2 - Request finished in 243.471ms 401 
+Information: 32 - Connection id "0HLNU9P2GGD6P", Request id "0HLNU9P2GGD6P:00000003": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Warning: 0 - Connection processing ended abnormally.
+Information: 2 - Request finished in 2303.1117ms 404 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/user/add application/json 98
+Information: 2 - Successfully validated the token.
+Information: 3 - Route matched with {action = "Add", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Entity.User) on controller API.Controllers.UserController (API).
+Information: 1 - Authorization was successful.
+Warning: 30000 - No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+Information: 10403 - Entity Framework Core 2.1.11-servicing-32099 initialized 'ManContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+Information: 1 - Executing action method API.Controllers.UserController.Add (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 450), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [CreateAt], [CreateBy], [Email], [FirstName], [IsActive], [LastName], [Password], [UpdateAt], [UpdateBy])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+Information: 2 - Executed action method API.Controllers.UserController.Add (API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4808.5019ms.
+Information: 1 - Executing ObjectResult, writing value of type 'Entity.User'.
+Information: 2 - Executed action API.Controllers.UserController.Add (API) in 5334.7565ms
+Information: 2 - Request finished in 5549.3507ms 200 application/json; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Warning: 0 - Connection processing ended abnormally.
+Error: 1 - An unhandled exception has occurred while executing the request.
+Information: 2 - Request finished in 1548.1662ms 500 text/html; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/user/add application/json 98
+Information: 2 - Successfully validated the token.
+Error: 1 - An unhandled exception has occurred while executing the request.
+Information: 2 - Request finished in 320.8042ms 500 text/html; charset=utf-8
+Information: 32 - Connection id "0HLNU9RU0RFS7", Request id "0HLNU9RU0RFS7:00000002": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 DEBUG http://localhost:51920/  0
+Information: 2 - Request finished in 1280.1858ms 200 
+Warning: 0 - Connection processing ended abnormally.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Information: 2 - Request finished in 1171.7923ms 404 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/user/add application/json 98
+Information: 2 - Successfully validated the token.
+Information: 3 - Route matched with {action = "Add", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Entity.User) on controller API.Controllers.UserController (API).
+Information: 1 - Authorization was successful.
+Warning: 30000 - No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+Information: 10403 - Entity Framework Core 2.1.11-servicing-32099 initialized 'ManContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+Information: 1 - Executing action method API.Controllers.UserController.Add (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 450), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [CreateAt], [CreateBy], [Email], [FirstName], [IsActive], [LastName], [Password], [UpdateAt], [UpdateBy])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+Information: 2 - Executed action method API.Controllers.UserController.Add (API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8687.4969ms.
+Information: 1 - Executing ObjectResult, writing value of type 'Entity.User'.
+Information: 2 - Executed action API.Controllers.UserController.Add (API) in 9238.6134ms
+Information: 2 - Request finished in 9536.901ms 200 application/json; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 DEBUG http://localhost:51920/  0
+Information: 2 - Request finished in 1855.0534ms 200 
+Warning: 0 - Connection processing ended abnormally.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Information: 2 - Request finished in 405.836ms 404 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/user/add application/json 98
+Information: 2 - Successfully validated the token.
+Information: 3 - Route matched with {action = "Add", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Entity.User) on controller API.Controllers.UserController (API).
+Information: 2 - Authorization failed.
+Information: 3 - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+Information: 1 - Executing ForbidResult with authentication schemes ().
+Information: 13 - AuthenticationScheme: Bearer was forbidden.
+Information: 2 - Executed action API.Controllers.UserController.Add (API) in 39.1724ms
+Information: 2 - Request finished in 371.1744ms 403 
+Information: 32 - Connection id "0HLNU9SI8OS1O", Request id "0HLNU9SI8OS1O:00000003": the application completed without reading the entire request body.
+Information: 1 - Request starting HTTP/1.1 DEBUG http://localhost:51920/  0
+Information: 2 - Request finished in 2427.386ms 200 
+Warning: 0 - Connection processing ended abnormally.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Information: 2 - Request finished in 1893.6181ms 404 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/api/user/add application/json 98
+Information: 2 - Successfully validated the token.
+Information: 3 - Route matched with {action = "Add", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Entity.User) on controller API.Controllers.UserController (API).
+Information: 1 - Authorization was successful.
+Warning: 30000 - No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+Information: 10403 - Entity Framework Core 2.1.11-servicing-32099 initialized 'ManContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+Information: 1 - Executing action method API.Controllers.UserController.Add (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (11ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 450), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [CreateAt], [CreateBy], [Email], [FirstName], [IsActive], [LastName], [Password], [UpdateAt], [UpdateBy])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+Information: 2 - Executed action method API.Controllers.UserController.Add (API), returned result Microsoft.AspNetCore.Mvc.CreatedResult in 219.7677ms.
+Information: 1 - Executing ObjectResult, writing value of type 'Entity.User'.
+Information: 2 - Executed action API.Controllers.UserController.Add (API) in 870.6193ms
+Information: 2 - Request finished in 1124.878ms 201 application/json; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 DEBUG http://localhost:51920/  0
+Information: 2 - Request finished in 2284.8931ms 200 
+Warning: 0 - Connection processing ended abnormally.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Information: 2 - Request finished in 1019.0827ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger  
+Information: 2 - Request finished in 15.8162ms 301 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/index.html  
+Information: 2 - Request finished in 151.8548ms 200 text/html
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui.css  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js  
+Information: 2 - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+Information: 2 - Request finished in 468.4071ms 200 text/css
+Information: 2 - Request finished in 526.6848ms 200 application/javascript
+Information: 2 - Request finished in 430.8404ms 200 application/javascript
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js.map  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/CoreSwagger/swagger.json  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/favicon-32x32.png  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js.map  
+Information: 2 - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+Error: 1 - An unhandled exception has occurred while executing the request.
+Information: 2 - Request finished in 301.9134ms 200 image/png
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js.map'. Physical path: 'N/A'
+Information: 2 - Request finished in 420.9358ms 200 text/plain
+Information: 2 - Request finished in 505.2014ms 500 text/html; charset=utf-8
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js.map'. Physical path: 'N/A'
+Information: 2 - Request finished in 816.8494ms 200 text/plain
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/index.html  
+Information: 2 - Request finished in 21.1947ms 200 text/html
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui.css  
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+Information: 2 - Request finished in 50.9353ms 200 application/javascript
+Error: 1 - An unhandled exception has occurred while executing the request.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js.map  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js.map  
+Error: 13 - Connection id "0HLNUAF5NTI08", Request id "0HLNUAF5NTI08:00000007": An unhandled exception was thrown by the application.
+Information: 2 - Request finished in 6468.6621ms 200 text/css
+Warning: 0 - Connection processing ended abnormally.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/favicon-16x16.png  
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js.map'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+Information: 2 - Request finished in 1284.9253ms 200 text/plain
+Information: 2 - Request finished in 68.3262ms 200 image/png
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js.map'. Physical path: 'N/A'
+Information: 2 - Request finished in 4122.4287ms 200 text/plain
+Information: 1 - Request starting HTTP/1.1 DEBUG http://localhost:51920/  0
+Information: 2 - Request finished in 1641.8055ms 200 
+Warning: 0 - Connection processing ended abnormally.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Information: 2 - Request finished in 1178.4602ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger  
+Information: 2 - Request finished in 58.4711ms 301 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/index.html  
+Information: 2 - Request finished in 163.4642ms 200 text/html
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui.css  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js  
+Information: 2 - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+Information: 2 - Request finished in 217.9222ms 200 text/css
+Information: 2 - Request finished in 242.5837ms 200 application/javascript
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+Information: 2 - Request finished in 337.778ms 200 application/javascript
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js.map  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/CoreSwagger/swagger.json  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js.map  
+Error: 1 - An unhandled exception has occurred while executing the request.
+Warning: 0 - Connection processing ended abnormally.
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js.map'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js.map'. Physical path: 'N/A'
+Information: 2 - Request finished in 1839.2676ms 200 text/plain
+Information: 2 - Request finished in 2137.8296ms 200 text/plain
+Information: 2 - Request finished in 1962.7586ms 500 text/html; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/CoreSwagger/swagger.json  
+Error: 1 - An unhandled exception has occurred while executing the request.
+Information: 2 - Request finished in 46.5722ms 500 text/html; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 DEBUG http://localhost:51920/  0
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Information: 2 - Request finished in 74.0625ms 200 
+Information: 2 - Request finished in 495.4616ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger  
+Information: 2 - Request finished in 21.45ms 301 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/index.html  
+Information: 2 - Request finished in 191.7131ms 200 text/html
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui.css  
+Warning: 0 - Connection processing ended abnormally.
+Warning: 0 - Connection processing ended abnormally.
+Information: 2 - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+Information: 2 - Request finished in 5502.7776ms 200 text/css
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/favicon-32x32.png  
+Information: 2 - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+Information: 2 - Request finished in 15.3516ms 200 image/png
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/index.html  
+Information: 2 - Request finished in 40.098ms 200 text/html
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui.css  
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+Information: 2 - Request finished in 149.5655ms 200 application/javascript
+Information: 2 - Request finished in 155.9485ms 200 text/css
+Information: 2 - Request finished in 211.9323ms 200 application/javascript
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js.map  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/CoreSwagger/swagger.json  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/favicon-32x32.png  
+Information: 2 - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+Information: 2 - Request finished in 116.2975ms 200 image/png
+Error: 1 - An unhandled exception has occurred while executing the request.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js.map  
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js.map'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js.map'. Physical path: 'N/A'
+Information: 2 - Request finished in 479.0178ms 200 text/plain
+Information: 2 - Request finished in 139.5429ms 200 text/plain
+Information: 2 - Request finished in 335.7493ms 500 text/html; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Warning: 0 - Connection processing ended abnormally.
+Information: 2 - Request finished in 2015.0693ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger  
+Information: 2 - Request finished in 15.6122ms 301 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/index.html  
+Information: 2 - Request finished in 137.117ms 200 text/html
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui.css  
+Warning: 0 - Connection processing ended abnormally.
+Information: 2 - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+Information: 2 - Request finished in 1496.4382ms 200 application/javascript
+Information: 2 - Request finished in 1470.2851ms 200 text/css
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js.map  
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js.map'. Physical path: 'N/A'
+Information: 2 - Request finished in 361.7084ms 200 text/plain
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/index.html  
+Information: 2 - Request finished in 5.6815ms 200 text/html
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui.css  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js  
+Information: 2 - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+Information: 2 - Request finished in 190.3404ms 200 application/javascript
+Information: 2 - Request finished in 177.1075ms 200 text/css
+Information: 2 - Request finished in 200.1266ms 200 application/javascript
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js.map  
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js.map'. Physical path: 'N/A'
+Information: 2 - Request finished in 124.0672ms 200 text/plain
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/CoreSwagger/swagger.json  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/favicon-32x32.png  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js.map  
+Information: 2 - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+Information: 2 - Request finished in 263.3115ms 200 image/png
+Error: 1 - An unhandled exception has occurred while executing the request.
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js.map'. Physical path: 'N/A'
+Information: 2 - Request finished in 344.4362ms 200 text/plain
+Information: 2 - Request finished in 460.1405ms 500 text/html; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 DEBUG http://localhost:51920/  0
+Information: 2 - Request finished in 1606.7576ms 200 
+Warning: 0 - Connection processing ended abnormally.
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Information: 2 - Request finished in 841.539ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger  
+Information: 2 - Request finished in 6.9343ms 301 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/index.html  
+Information: 2 - Request finished in 202.2394ms 200 text/html
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui.css  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js  
+Information: 2 - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+Information: 2 - Request finished in 320.3927ms 200 application/javascript
+Information: 2 - Request finished in 333.4369ms 200 text/css
+Information: 2 - Request finished in 323.9444ms 200 application/javascript
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js.map  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/CoreSwagger/swagger.json  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js.map  
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js.map'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js.map'. Physical path: 'N/A'
+Error: 1 - An unhandled exception has occurred while executing the request.
+Information: 2 - Request finished in 619.3893ms 200 text/plain
+Information: 2 - Request finished in 317.0379ms 200 text/plain
+Information: 2 - Request finished in 724.0165ms 500 text/html; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/index.html  
+Information: 2 - Request finished in 13.3097ms 200 text/html
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui.css  
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+Information: 2 - Request finished in 101.1378ms 200 application/javascript
+Information: 2 - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+Information: 2 - Request finished in 184.6246ms 200 text/css
+Information: 2 - Request finished in 247.4732ms 200 application/javascript
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js.map  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/CoreSwagger/swagger.json  
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js.map'. Physical path: 'N/A'
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js.map  
+Information: 2 - Request finished in 231.8499ms 200 text/plain
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/favicon-32x32.png  
+Error: 1 - An unhandled exception has occurred while executing the request.
+Information: 2 - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+Information: 2 - Request finished in 126.6552ms 200 image/png
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js.map'. Physical path: 'N/A'
+Information: 2 - Request finished in 264.2503ms 500 text/html; charset=utf-8
+Information: 2 - Request finished in 250.7427ms 200 text/plain
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Information: 1 - Request starting HTTP/1.1 DEBUG http://localhost:51920/  0
+Information: 2 - Request finished in 79.3944ms 200 
+Information: 2 - Request finished in 486.4287ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger  
+Information: 2 - Request finished in 32.9476ms 301 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/index.html  
+Information: 2 - Request finished in 264.7413ms 200 text/html
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui.css  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js  
+Information: 2 - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+Information: 2 - Request finished in 225.6653ms 200 text/css
+Information: 2 - Request finished in 245.5085ms 200 application/javascript
+Information: 2 - Request finished in 290.9065ms 200 application/javascript
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js.map  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/CoreSwagger/swagger.json  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js.map  
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js.map'. Physical path: 'N/A'
+Information: 2 - Request finished in 331.0497ms 200 text/plain
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js.map'. Physical path: 'N/A'
+Information: 2 - Request finished in 173.6759ms 200 text/plain
+Error: 1 - An unhandled exception has occurred while executing the request.
+Information: 2 - Request finished in 389.0314ms 500 text/html; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Warning: 0 - Connection processing ended abnormally.
+Information: 2 - Request finished in 2034.7521ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger  
+Information: 2 - Request finished in 57.1454ms 301 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/index.html  
+Information: 2 - Request finished in 127.2561ms 200 text/html
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui.css  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js  
+Warning: 0 - Connection processing ended abnormally.
+Information: 2 - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+Information: 2 - Request finished in 1317.9776ms 200 application/javascript
+Information: 2 - Request finished in 1327.0612ms 200 text/css
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js.map  
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js.map'. Physical path: 'N/A'
+Information: 2 - Request finished in 65.2616ms 200 text/plain
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger  
+Information: 2 - Request finished in 6.0763ms 301 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/index.html  
+Information: 2 - Request finished in 13.9921ms 200 text/html
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js  
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+Information: 2 - Request finished in 95.0104ms 200 application/javascript
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+Warning: 0 - Connection processing ended abnormally.
+Information: 2 - Request finished in 8153.0346ms 200 application/javascript
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/CoreSwagger/swagger.json  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js.map  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js.map  
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js.map'. Physical path: 'N/A'
+Information: 2 - Request finished in 82.6264ms 200 text/plain
+Error: 1 - An unhandled exception has occurred while executing the request.
+Information: 2 - Request finished in 180.8509ms 500 text/html; charset=utf-8
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js.map'. Physical path: 'N/A'
+Information: 2 - Request finished in 311.3587ms 200 text/plain
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/index.html  
+Information: 2 - Request finished in 5.1463ms 200 text/html
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui.css  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js  
+Information: 2 - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+Information: 2 - Request finished in 212.5684ms 200 text/css
+Information: 2 - Request finished in 240.5046ms 200 application/javascript
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+Information: 2 - Request finished in 313.8986ms 200 application/javascript
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-bundle.js.map  
+Information: 2 - Sending file. Request path: '/swagger-ui-bundle.js.map'. Physical path: 'N/A'
+Information: 2 - Request finished in 128.3072ms 200 text/plain
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/CoreSwagger/swagger.json  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/favicon-32x32.png  
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/swagger/swagger-ui-standalone-preset.js.map  
+Error: 1 - An unhandled exception has occurred while executing the request.
+Information: 2 - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+Information: 2 - Sending file. Request path: '/swagger-ui-standalone-preset.js.map'. Physical path: 'N/A'
+Information: 2 - Request finished in 101.2102ms 200 image/png
+Information: 2 - Request finished in 183.4925ms 500 text/html; charset=utf-8
+Information: 2 - Request finished in 146.272ms 200 text/plain
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/  
+Warning: 0 - Connection processing ended abnormally.
+Information: 2 - Request finished in 2403.9831ms 404 
+Information: 1 - Request starting HTTP/1.1 POST http://localhost:44371/token application/json 50
+Information: 3 - Route matched with {action = "Post", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(LoginRequest) on controller API.Controllers.TokenController (API).
+Warning: 30000 - No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+Information: 10403 - Entity Framework Core 2.1.11-servicing-32099 initialized 'ManContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+Information: 1 - Executing action method API.Controllers.TokenController.Post (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (35ms) [Parameters=[@__request_UserName_0='?' (Size = 450), @__request_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[CreateAt], [x].[CreateBy], [x].[Email], [x].[FirstName], [x].[IsActive], [x].[LastName], [x].[Password], [x].[UpdateAt], [x].[UpdateBy]
+FROM [Users] AS [x]
+WHERE ([x].[Email] = @__request_UserName_0) AND ([x].[Password] = @__request_Password_1)
+Information: 2 - Executed action method API.Controllers.TokenController.Post (API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 372.2709ms.
+Information: 1 - Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+Information: 2 - Executed action API.Controllers.TokenController.Post (API) in 862.4728ms
+Information: 2 - Request finished in 961.0667ms 200 application/json; charset=utf-8
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/user/add?Email=c  
+Information: 2 - Request finished in 7.9315ms 404 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/user/get?id=  
+Information: 3 - Route matched with {action = "Get", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller API.Controllers.UserController (API).
+Information: 2 - Authorization failed.
+Information: 3 - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+Information: 1 - Executing ChallengeResult with authentication schemes ().
+Information: 12 - AuthenticationScheme: Bearer was challenged.
+Information: 2 - Executed action API.Controllers.UserController.Get (API) in 63.8813ms
+Information: 2 - Request finished in 98.1953ms 401 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/user/get?id=  
+Information: 3 - Route matched with {action = "Get", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller API.Controllers.UserController (API).
+Information: 2 - Authorization failed.
+Information: 3 - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+Information: 1 - Executing ChallengeResult with authentication schemes ().
+Information: 12 - AuthenticationScheme: Bearer was challenged.
+Information: 2 - Executed action API.Controllers.UserController.Get (API) in 20.4528ms
+Information: 2 - Request finished in 59.5862ms 401 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/user/get?id=  
+Information: 3 - Route matched with {action = "Get", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller API.Controllers.UserController (API).
+Information: 2 - Authorization failed.
+Information: 3 - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+Information: 1 - Executing ChallengeResult with authentication schemes ().
+Information: 12 - AuthenticationScheme: Bearer was challenged.
+Information: 2 - Executed action API.Controllers.UserController.Get (API) in 25.6774ms
+Information: 2 - Request finished in 52.7242ms 401 
+Information: 1 - Request starting HTTP/1.1 GET http://localhost:44371/api/user/get?id=  
+Information: 2 - Successfully validated the token.
+Information: 3 - Route matched with {action = "Get", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller API.Controllers.UserController (API).
+Information: 1 - Authorization was successful.
+Information: 1 - Executing action method API.Controllers.UserController.Get (API) - Validation state: Valid
+Information: 20101 - Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[CreateAt], [x].[CreateBy], [x].[Email], [x].[FirstName], [x].[IsActive], [x].[LastName], [x].[Password], [x].[UpdateAt], [x].[UpdateBy]
+FROM [Users] AS [x]
+WHERE [x].[Id] IS NULL
+Information: 2 - Executed action method API.Controllers.UserController.Get (API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6314.8708ms.
+Information: 1 - Executing ObjectResult, writing value of type 'null'.
+Information: 2 - Executed action API.Controllers.UserController.Get (API) in 11853.9611ms
+Information: 2 - Request finished in 11953.8351ms 204 
