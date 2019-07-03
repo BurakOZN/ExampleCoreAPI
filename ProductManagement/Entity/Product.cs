@@ -14,6 +14,7 @@ namespace Entity
         public decimal Price { get; set; }
 
         //User FK
+        [DataMember]
         public string UserId { get; set; }
         public virtual User User { get; set; }
 
